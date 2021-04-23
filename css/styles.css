@@ -59,7 +59,7 @@
         margin-top: 40px;
       }
       
-@media screen and (max-width: 1440px) {
+@media screen and (min-width: 850px) {
     .container{
         width: 100%;
         margin: -50px;
@@ -222,7 +222,7 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 415px) {
 
     .container{
         width: 100%;
@@ -365,4 +365,8 @@
         width: auto;
         height: 600px;
     }
+}
+
+@media screen and (min-width: 415px) {
+
 }
