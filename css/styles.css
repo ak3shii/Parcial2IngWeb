@@ -59,6 +59,7 @@
         margin-top: 40px;
       }
       
+/* PC */
 @media screen and (min-width: 850px) {
     .container{
         width: 100%;
@@ -180,12 +181,11 @@
     }
 
     .iconosFlechas{
-        /* position: relative;
-        z-index: 5; */
         background: #000000;
-        font-size: 40px;
-        margin-left: -73px;
-        
+        font-size: 30px;
+        width: 30%;
+        text-align: left;
+        padding: 16px;    
     }
 
     /* Imagen sillas negras */
@@ -222,7 +222,13 @@
     }
 }
 
-@media screen and (max-width: 415px) {
+/* Tablets */
+@media screen and (min-width: 600px) {
+
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
 
     .container{
         width: 100%;
@@ -365,8 +371,4 @@
         width: auto;
         height: 600px;
     }
-}
-
-@media screen and (min-width: 415px) {
-
 }
