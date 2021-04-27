@@ -10,7 +10,7 @@
         font-weight: normal;
         font-style:normal;
       }
-@media screen and (width: 1440px) {
+@media screen and (min-width: 1440px) {
     .container{
         width: 100%;
         margin: -50px;
