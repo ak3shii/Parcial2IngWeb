@@ -314,6 +314,8 @@
     .mostrar{
         height: 200px;
         background: black;
+        overflow:visible;
+
     }
     .menu {
         z-index: 2;
@@ -327,7 +329,7 @@
         list-style:none;
         text-align: center;
         height: 0;
-        /* overflow: hidden; */
+        overflow: hidden;
         transition: height .2s linear;
 
     }
