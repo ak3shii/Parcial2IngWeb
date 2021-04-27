@@ -5,14 +5,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <title>Parcial Responsive
     </title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Prueba Commit</h1>
+        <div class="navBar">
+            <div class=icons>
+                <i class="icon-logo" id="btnmenu"></i>
+            </div>
+            <div class="title">
+                <i class="icon-icon-angle-right"></i>
+            </div>
+            <div class="subtitle">
+                <ul class="menu" id="menu">
+                    <li><a href="./index.html" class="menu__link">home</a></li>
+                    <li><a href="#" class="menu__link">shop</a></li>
+                    <li><a href="about.html" class="menu__link">about</a></li>
+                    <li><a href="contact.html" class="menu__link">contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head1" *ngIf="mostrar=true">
+            <img src="./img/contact-image-hero.jpg" class="img1" alt="Imagen1">
+            
+        </div>
+        <div class="head2">
+
+            <div class="title1">
+                <h1>We are available
+                    all across the globe
+                </h1>
+            </div>
+            <div class="content">
+                <h2>With stores all over the world, it's easy for you find furniture for
+                    your home or place of business. Locally, we're in most major
+                    cities throughout the country. Find the branch neares you using
+                    our store locator. Any questions? Don't hesitate to contact us
+                    today.
+                </h2>
+                <br>
+                <h2>
+                    S H O P &nbsp;&nbsp; N O W  &nbsp;&nbsp;  <i class="icon-icon-close" onclick=""></i>
+                </h2>
+            </div>
+        </div>
+
+    </div>
+    <div class="container1">
+        <div class="footer1">
+            <img src="./img/image-about-dark.jpg" class="img2" alt="ImgChairsDark">
+        </div>
+
+        <div class="footer2">
+            <div class="title1">
+                <h1>About our staff</h1>
+            </div>
+            <div class="content">
+                
+        </div>
+
+        <div class="footer3">
+            <img src="./img/image-about-light.jpg" alt="Imagen de lampara" class="img3">
+        </div>
 
     </div>
     <script src="./js/menu.js"></script>
