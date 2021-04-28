@@ -42,6 +42,12 @@
       }
       .icon-icon-close:before {
         content: "\e902";
+        font-size: 30px;
+        position: absolute;
+        z-index: 5;
+        margin-left: -370px;
+        margin-top: 130px;
+        color: gray;
       }
       .icon-icon-hamburger:before {
         content: "\e903";
@@ -231,10 +237,10 @@
 @media screen and (max-width: 600px) {
 
     .container{
-        width: 100%;
+        width: 80%;
         margin: 0;
         display: grid;
-        grid-template-columns: 800px;
+        grid-template-columns: auto;
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
         "first"
@@ -260,7 +266,7 @@
         background: LightSalmon;
         /* margin-top: -100px; */
         position:relative;
-        /* width: 100px; */
+        width: 850px;
         /* height: auto;  */
     }
     .head2{
@@ -298,24 +304,23 @@
     .subtitle{
         width: 100%;
         z-index: 1;
-        position: relative;
-        margin-top: 50px;
+        position: absolute;
+        margin-top: -10px;
         font-size: 14px;
-        margin-left: 180px;
+        /* margin-left: 180px; */
         align-items: center;
         /* margin-top: 200px; */
     }
     .icons{
-        margin-top: -1450px;
+        margin-top: -1500px;
         margin-left: 50px;
         z-index: 1;
         position: relative;
         font-size: 30px;
     }
     .mostrar{
-        height: 800px !important;
-        background: black;
-        overflow:visible;
+        height: 250px !important;
+        width: 850px !important;
 
     }
     .menu {
@@ -324,22 +329,27 @@
         margin-top: -155px;
         /* margin-left: -140px; */
         width: 100%;
-        background: rgba(0,0,0,.80);
+        background: rgba(255, 255, 255);
         padding: 0;
         /* margin: 0;  */
-        list-style:none;
+        /* list-style:none;*/
         text-align: center;
         height: 0;
         overflow: hidden;
-        transition: height .2s linear;
+        /* transition: height .2s linear; */
 
     }
     .menu__link {
-        display: block;
+        /* display: block; */
         padding: 25px;
         color: black;
         text-decoration: none;
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .submenu{
+        margin-top: 130px;
+        margin-left: 150px;
+        font-family: spartanBold;
     }
     .title1{
         font-family: spartanBold;
@@ -377,12 +387,12 @@
     .img2{
         /* margin-top: 5px;*/
         margin-left: -10px;
-        width: auto;
+        width: 850px;
         height: 600px;
     }
     .img3{
         margin-left: -10px;
-        width: auto;
+        width: 850px;
         height: 600px;
     }
 }
