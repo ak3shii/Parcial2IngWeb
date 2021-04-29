@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Parcial Responsive
     </title>
 </head>
@@ -14,18 +14,23 @@
     <div class="container">
         <div class="navBar">
             <div class=icons>
-                <i class="icon-logo" id="btnmenu"></i>
+                <span class="icon-icon-hamburger" id="btnmenu"></span>
             </div>
             <div class="title">
-                <i class="icon-icon-angle-right"></i>
+                <i class="icon-logo"></i>
             </div>
             <div class="subtitle">
-                <ul class="menu" id="menu">
-                    <li><a href="./index.html" class="menu__link">home</a></li>
-                    <li><a href="#" class="menu__link">shop</a></li>
-                    <li><a href="about.html" class="menu__link">about</a></li>
-                    <li><a href="contact.html" class="menu__link">contact</a></li>
-                </ul>
+                <div class="menu" id="menu1">
+                    <div>
+                        <span class="icon-icon-close" id="btnclose"></span>
+                    </div>
+                    <div class="submenu" >
+                        <a href="./index.html" class="menu__link">home</a>
+                        <a href="./shop.html" class="menu__link">shop</a>
+                        <a href="./about.html" class="menu__link">about</a>
+                        <a href="./contact.html" class="menu__link">contact</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="head1" *ngIf="mostrar=true">
