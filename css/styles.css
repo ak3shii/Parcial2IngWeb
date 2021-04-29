@@ -608,7 +608,19 @@
         margin-left: 150px;
         font-family: spartanBold;
     }
-    
+    .title1{
+        font-family: spartanBold;
+        font-size: 30px;
+        justify-items: center;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+    .content{
+        font-family: spartanRegular;
+        margin: -30px 40px 0px 40px;
+        font-size: 20px;
+        color: #ababab;
+    }
     .footer1{
         background: LightSkyBlue;
         grid-area: third;
