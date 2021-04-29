@@ -299,11 +299,6 @@
         text-align: center;
         height: 0;
         overflow: hidden;
-<<<<<<< HEAD
-=======
-        transition: width .1s linear;
->>>>>>> d945a489f0143d88a76e0a215f16c74e8fcc7be8
-
     }
     .menu__link {
         padding: 25px;
