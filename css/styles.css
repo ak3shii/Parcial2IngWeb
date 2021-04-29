@@ -10,6 +10,13 @@
         font-weight: normal;
         font-style:normal;
       }
+@font-face {
+    font-family: 'spartanlight';
+    src: url('../fonts/Spartan-Light.ttf');
+        font-weight: normal;
+        font-style:normal;
+      }
+
       @font-face {
         font-family: 'icomoon';
         src:  url('../fonts/icomoon.eot');
@@ -39,6 +46,7 @@
 
       .icon-icon-arrow:before {
         content: "\e901";
+        margin-left: 30px;
       }
       .icon-icon-close:before {
         content: "\e902";
@@ -82,7 +90,7 @@
         width: 100%;
         margin: -10px;
         display: grid;
-        grid-template-columns: 0.8fr 2.3fr 1fr;
+        grid-template-columns: 0.8fr 2.3fr 1.38fr;
         grid-template-rows: 1.7fr;
         grid-template-areas:
         "footerL footerC footerR";
@@ -178,11 +186,31 @@
         margin-top: 80px;
         /* background-color: darkslategray; */
     }
+    .title2{
+        font-family: spartanBold;
+        font-size: 8px;
+        margin-left: 50px;
+        justify-items: center;
+        margin: 30px 30px 30px 30px;
+        margin-top: 80px;
+        /* background-color: darkslategray; */
+    }
     .content{
-        font-family: spartanRegular;
+        font-family: spartanlight;
         margin-left: 20px;
         font-size: 10px;
+        line-height: 25px;
         color: #ababab;
+        /* text-indent: 2em; */
+        /* background-color: darkgoldenrod; */
+    }
+    .content1{
+        font-family: spartanlight;
+        margin: 30px 30px 30px 30px;
+        font-size: 10px;
+        line-height: 25px;
+        color: #ababab;
+        /* text-indent: 2em; */
         /* background-color: darkgoldenrod; */
     }
 
@@ -311,6 +339,10 @@
         align-items: center;
         /* margin-top: 200px; */
     }
+    .shop{
+        color:#000000;
+    }
+
     .icons{
         margin-top: -1500px;
         margin-left: 50px;
