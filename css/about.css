@@ -41,7 +41,7 @@
     color: #000000;
   }
   .icon-icon-close:before {
-    content: "\e901";
+    content: "\e902";
     font-size: 30px;
     position: absolute;
     z-index: 5;
@@ -66,7 +66,7 @@
     color: #fff;
   }
 /* Descko */
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 1300px) {
     .container{
         width: 100%;
         margin: -50px;
@@ -221,6 +221,7 @@
         height: 280px;
     }
 }
+
 /* Tablets */
 @media screen and (min-width: 600px) {
 
@@ -229,5 +230,172 @@
 /* Mobile */
 @media screen and (max-width: 600px) {
 
-  
+    .container{
+        width: 80%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 0.7fr 1.1fr;
+        grid-template-areas:
+        "first"
+        "second";
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .container1 {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns:700px;
+        grid-template-rows: 1fr 1.5fr 1fr;
+        grid-template-areas:
+        "third"
+        "fourth"
+        "fifth"
+        ;
+      }
+    .head1{
+        grid-area: first;
+        z-index: -1;
+        position:relative;
+        width: 850px;
+    }
+    .head2{
+        margin-top: -45px;
+        grid-area: second;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 2.5fr 1fr;
+        justify-content: center;
+    }
+    .img1{
+        z-index: -1;
+        position:relative;
+        width: 860px;
+        height: 750px;
+        margin-left: -10px;
+    }
+    .title{
+        z-index: 1;
+        position: absolute;
+        color: #ffffff;
+        margin-top: -30px;
+        margin-left: 350px;
+        font-size: 30px;
+    }
+    .title1{
+        font-family: spartanBold;
+        font-size: 30px;
+        justify-items: center;
+        margin-left: 80px;
+        margin-top: 80px;
+        /* background-color: darkslategray; */
+    }
+    .subtitle{
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        margin-top: -10px;
+        /* font-size: 14px; */
+        align-items: center;
+    }
+    .content1{
+        font-family: spartanBold;
+        font-size: 18px;
+        justify-items: center;
+        margin: 100px 30px 30px 60px;
+        /* background-color: darkslategray; */
+    }
+    .icons{
+        margin-top: -1750px;
+        margin-left: 50px;
+        z-index: 1;
+        position: relative;
+        font-size: 30px;
+    }
+    .mostrar{
+        height: 250px !important;
+        width: 850px !important;
+
+    }
+    .menu {
+        z-index: 2;
+        position: absolute;
+        margin-top: -155px;
+        width: 100%;
+        background: rgba(255, 255, 255);
+        padding: 0;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+
+    }
+    .menu__link {
+        /* display: block; */
+        padding: 25px;
+        color: black;
+        text-decoration: none;
+        font-size: 25px;
+    }
+    .submenu{
+        margin-top: 130px;
+        margin-left: 150px;
+        font-family: spartanBold;
+    }
+    .iconosFlechas{
+        background: #000000;
+        margin: 40px 0px 0px 650px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        z-index: 5;
+
+    }
+    
+    .content{
+        font-family: spartanRegular;
+        margin-left: 40px;
+        margin-top: -30px;
+        font-size: 20px;
+        color: #ababab;
+        /* background-color: darkgoldenrod; */
+    }
+    .content2{
+        font-family: spartanlight;
+        margin: 60px 50px 40px 60px;
+        font-size: 20px;
+        line-height: 50px;
+        color: #ababab;
+        /* text-indent: 2em; */
+        /* background-color: darkgoldenrod; */
+    }
+    .footer1{
+        /* margin-left: -10px; */
+        background: LightSkyBlue;
+        grid-area: third;
+    }
+    .footer2{
+        /* margin-left: -10px; */
+        background: PaleGreen;
+        grid-area: fourth;
+        background-color: #ffffff;
+    }
+
+    .footer3{
+        /* margin-left: -10px; */
+        background: PaleTurquoise;
+        grid-area: fifth;
+    }
+    .img2{
+        /* margin-top: 5px;*/
+        margin-left: -10px;
+        width: 850px;
+        height: 600px;
+    }
+    .img3{
+        margin-left: -10px;
+        width: 850px;
+        height: 600px;
+    }
 }
