@@ -107,6 +107,7 @@
      .head1{
         grid-area: head;
         z-index: -1;
+        background: white;
         position:relative;
     }
 
