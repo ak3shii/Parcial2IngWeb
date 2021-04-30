@@ -87,7 +87,7 @@
         width: 100%;
         margin: 0px -50px;
         display: grid;
-        grid-template-columns: 0.6fr 0.6fr 1fr;
+        grid-template-columns: 0.6fr 0.7fr 1.5fr;
         grid-template-rows: 0.8fr;
         grid-template-areas:
         "head head headR";
@@ -162,17 +162,9 @@
     }
 
     .menu__link:hover {
-        /* content: "\ea0b";
-        position: relative;
-        z-index: 1000;
-        margin-bottom: -50px; */
         text-decoration: underline white;
         font-size: 15px;
-        /* line-height: 50px; */
     }
-    /* .menu__link--select {
-        text-decoration: underline black;
-    } */
     .head2{
         margin-top: -20px;
         grid-area: headR;
@@ -220,7 +212,7 @@
 
     .iconosFlechas{
         background: #000000;
-        margin: 23px 0px 0px 0px;
+        margin: 23px 0px 0px -94px;
         width: 100px;
         height: 100px;
         position: relative;
@@ -234,7 +226,7 @@
     }
     .iconosFlechas1{
         background: #000000;
-        margin: -110px 0px 0px 98px;
+        margin: -110px 0px 0px 6px;
         width: 100px;
         height: 100px;
         position: relative;
@@ -447,9 +439,205 @@
 }
 
 /* Tablets */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 600px) and (max-width: 780px){
 
+    .container{
+        width: 80%;
+        margin: 0;
+        display: grid;
+        grid-template-columns: 800px;
+        grid-template-rows: 0.6fr 1.2fr;
+        grid-template-areas:
+        "first"
+        "second";
+        margin-top: -10px;
+        margin-left: -10px;
+    }
+    .container1 {
+        width: 100%;
+        margin: 0;
+        display: grid;
+        grid-template-columns:750px;
+        grid-template-rows: 1fr 1.3fr 1fr;
+        grid-template-areas:
+        "third"
+        "fourth"
+        "fifth"
+        ;
+      }
+    .head1{
+        grid-area: first;
+        z-index: -1;
+        background: LightSalmon;
+        position:relative;
+        width: 850px;
+    }
+    .head2{
+        margin-top: -45px;
+        grid-area: second;
+        background: #ffffff;
+        display: grid;
+        width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: 2fr 2.5fr 0.7fr;
+        justify-content: center;
+    }
+    .img1{
+        z-index: -1;
+        position:relative;
+        width: 860px;
+        height: 750px;
+        margin-left: -10px;
+    }
+    .title{
+        z-index: 1;
+        position: absolute;
+        color: #ffffff;
+        margin: -30px 30px 30px 350px;
+        font-size: 30px;
+    }
+    .title1{
+        font-family: spartanBold;
+        font-size: 30px;
+        justify-items: center;
+        margin: 80px 30px 20px 60px;
+    }
+    .subtitle{
+        width: 100%;
+        z-index: 1;
+        position: absolute;
+        margin-top: -10px;
+        /* font-size: 14px; */
+        align-items: center;
+    }
+    .title2{
+        font-family: spartanBold;
+        font-size: 18px;
+        justify-items: center;
+        margin: 100px 30px 30px 60px;
+        /* background-color: darkslategray; */
+    }
+    .content{
+        font-family: spartanRegular;
+        margin: -70px 50px 40px 80px;
+        font-size: 20px;
+        line-height: 45px;
+        color: #ababab;
+    }
+    .content1{
+        font-family: spartanlight;
+        margin: 60px 50px 40px 80px;
+        font-size: 20px;
+        line-height: 50px;
+        color: #ababab;
+        /* text-indent: 2em; */
+        /* background-color: darkgoldenrod; */
+    }
+    .shop{
+        color:#000000;
+    }
+
+    .icons{
+        margin-top: -1600px;
+        margin-left: 50px;
+        z-index: 1;
+        position: relative;
+        font-size: 30px;
+    }
+    .mostrar{
+        height: 250px !important;
+        width: 800px !important;
+        transition: width .3s ease-out !important;
+    }
+    .menu {
+        z-index: 2;
+        position: absolute;
+        margin-top: -155px;
+        width: 100%;
+        background: rgba(255, 255, 255);
+        padding: 0;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+    }
+    .menu__link:hover {
+        text-decoration: underline black;
+        font-size: 35px;
+    }
+    .iconosFlechas{
+        background: #000000;
+        margin: 40px 0px 0px 650px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        z-index: 5;
+
+    }
+    .iconosFlechas:hover{
+        background: #ababab;
+    }
+    .iconosFlechas1:hover{
+        background: #ababab;
+    }
+    .iconosFlechas1{
+        background: #000000;
+        margin: -100px 0px 0px 750px;
+        width: 100px;
+        height: 100px;
+        position: relative;
+        z-index: 2;
+
+    }
+    .menu__link {
+        padding: 25px;
+        color: black;
+        text-decoration: none;
+        font-size: 30px;
+    }
+    .submenu{
+        margin-top: 130px;
+        margin-left: 150px;
+        font-family: spartanBold;
+    }
+    .title1{
+        font-family: spartanBold;
+        font-size: 30px;
+        justify-items: center;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+    .content{
+        font-family: spartanRegular;
+        margin: -30px 40px 0px 40px;
+        font-size: 20px;
+        color: #ababab;
+    }
+    .footer1{
+        background: LightSkyBlue;
+        grid-area: third;
+    }
+    .footer2{
+        background: PaleGreen;
+        grid-area: fourth;
+        background-color: #ffffff;
+    }
+
+    .footer3{
+        background: PaleTurquoise;
+        grid-area: fifth;
+    }
+    .img2{
+        margin-left: -10px;
+        width: auto;
+        height: 600px;
+    }
+    .img3{
+        margin-left: -10px;
+        width: auto;
+        height: 600px;
+    }
 }
+
 
 /* Mobile */
 @media screen and (max-width: 600px) {
@@ -572,6 +760,10 @@
         text-align: center;
         height: 0;
         overflow: hidden;
+    }
+    .menu__link:hover {
+        text-decoration: underline black;
+        font-size: 35px;
     }
     .iconosFlechas{
         background: #000000;
