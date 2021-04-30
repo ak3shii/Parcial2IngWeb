@@ -9,6 +9,21 @@
             "fifth";
     }
     
+    .img1 {
+        z-index: -1;
+        position: relative;
+        width: 946px;
+        height: 750px;
+        margin-left: -10px;
+    }
+
+    .head1 {
+        grid-area: first;
+        z-index: -1;
+        background: white;
+        position: relative;
+        width: 933px;
+    }
     .divAbout{
         margin-top: -14rem;
     }
@@ -32,11 +47,11 @@
     .title1 {
         font-family: spartanBold;
         font-size: 30px;
-        width: 100%;
+        width: 92%;
         justify-items: center;
         margin-left: 80px;
         margin-top: 80px;
-    }
+    }    
 
     @keyframes avatarMove {
         0%   {left:0px; top:0px;}
