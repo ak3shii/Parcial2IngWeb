@@ -8,7 +8,7 @@
             "fourth"
             "fifth";
     }
-
+    
     .divAbout{
         margin-top: -14rem;
     }
@@ -21,7 +21,7 @@
         background-color: white;
         position: relative;
         animation-name: avatarMove;
-        animation-duration: 10s;
+        animation-duration: 7s;
     }
     
     .staff{
@@ -29,9 +29,58 @@
         z-index: -1;
     }
 
+    .title1 {
+        font-family: spartanBold;
+        font-size: 30px;
+        width: 100%;
+        justify-items: center;
+        margin-left: 80px;
+        margin-top: 80px;
+    }
+
     @keyframes avatarMove {
         0%   {left:0px; top:0px;}
-        50%  {left:50%; top:0px;}
+        50%  {left:80%; top:0px;}
         100% {left:0px; top:0px;}
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .container {
+        width: 100%;
+        margin: 0px -50px;
+        display: grid;
+        grid-template-columns: 0.6fr 1.6fr;
+        grid-template-rows: 0.8fr;
+        grid-template-areas: "head headR";
+        margin-top: -10px;
+        margin-left: -8px;
+    }
+
+    .subtitle {
+        width: 600px;
+        z-index: 1;
+        position: relative;
+        font-size: 14px;
+        margin-left: 180px;
+        align-items: center;
+    }
+
+    .title {
+        z-index: 1;
+        position: relative;
+        margin-left: 80px;
+    }
+     
+    .divAbout {
+        grid-area: footer1;
+        z-index: -1;
+        background: white;
+        position: relative;
+    }
+
+    .imgAvatar{
+        position: fixed;
+        z-index: -1;
     }
 }
